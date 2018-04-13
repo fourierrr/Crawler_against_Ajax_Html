@@ -1,0 +1,2 @@
+# Crawler_against_Ajax_Html
+针对动态生成的页面（如采用了Ajax的页面）的python爬虫实战
