@@ -4,14 +4,11 @@
 # @Last Modified by:   Nessaj
 # @Last Modified time: 2018-04-22 15:19:09
 
-"参考文章https://cuiqingcai.com/5024.html"
 
 import execjs
 import os
-# import execjs.runtime_names
 import requests
-# os.environ["EXECJS_RUNTIME"] = "Node"
-# print(execjs.get().name)
+
 # Init environment
 node = execjs.get(execjs.runtime_names.Node)
 
@@ -43,7 +40,7 @@ text=text.replace(' ','')
 text=text.replace('\n','')
 
 # Decode data
-# js1 = 'decodeData("{0}")'.format(response.text)
+# js = 'decodeData("{0}")'.format(response.text)
 
 js = 'decodeData("{0}")'.format(text)
 decrypted_data = ctx.eval(js)
